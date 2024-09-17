@@ -21,12 +21,16 @@ const Navbar = () => {
             AnakinBlog
         </div></Link>
         <div className="hidden md:flex space-x-4 items-center ">
-          <Link href="/"> Home
+          <Link href="/" className="hover:scale-105 hover:font-semibold transition-transform duration-300"> Home
           </Link>
-          <Link href="/about">
+          <Link href="/about" className="hover:scale-105 hover:font-semibold transition-transform duration-300">
              About
           </Link>
-          <Link href="/contact">
+          <Link href="/about" className="hover:scale-105 hover:font-semibold transition-transform duration-300">
+             Blog
+          </Link>
+
+          <Link href="/contact" className="hover:scale-105 hover:font-semibold transition-transform duration-300">
               Contact
           </Link>
           <div className='flex items-center'>
@@ -47,6 +51,9 @@ const Navbar = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M412h16m-7 6h7"></path>
               </svg>
             </SheetTrigger>
+            <span className="mx-2">
+            <ModeToggle/>
+            </span>
             <SheetContent>
     <SheetHeader>
       <SheetTitle className="font-bold my-4">Anakin's Blog</SheetTitle>
