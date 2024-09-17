@@ -10,7 +10,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
-
+import { ModeToggle } from './theme-btn';
 
 
 const Navbar = () => {
@@ -29,9 +29,10 @@ const Navbar = () => {
           <Link href="/contact">
               Contact
           </Link>
-          <div>
+          <div className='flex items-center'>
         <Button className="mx-1" variant="outline">Login</Button>
         <Button className="mx-1" variant="outline">Signup</Button>
+        <ModeToggle/>
 
         </div>
           </div>
@@ -62,6 +63,7 @@ const Navbar = () => {
           <div>
         <Button className="mx-1 text-xs" variant="outline">Login</Button>
         <Button className="mx-1  text-xs" variant="outline">Signup</Button>
+        
 
         </div>
           </div>
