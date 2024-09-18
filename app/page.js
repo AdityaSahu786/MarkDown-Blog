@@ -27,7 +27,7 @@ export default function Home() {
           <img src="https://www.creative-tim.com/twcomponents/svg/website-designer-bro-purple.svg" alt="tailwind css components" className="w-full h-full max-w-md mx-auto" />
         </div>
       </section>
-      <section class="bg-gray-100 py-12">
+      <section class="bg-gray-900 py-12">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-12">
       <h2 class="text-3xl font-extrabold text-gray-900">Pricing Plans</h2>
@@ -51,19 +51,12 @@ export default function Home() {
             <span class="text-green-500">✔</span>
             <span class="ml-3 text-gray-700">Feature 3</span>
           </li>
-          <li class="flex items-center">
-            <span class="text-green-500">✔</span>
-            <span class="ml-3 text-gray-700">Feature 4</span>
-          </li>
-          <li class="flex items-center">
-            <span class="text-green-500">✔</span>
-            <span class="ml-3 text-gray-700">Feature 5</span>
-          </li>
         </ul>
-        <button class="mt-8 w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700">Choose Basic</button>
+        <button class="mt-8 w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-black-700">Choose Basic</button>
       </div>
-      
-      <div class="bg-white p-8 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
+
+      <div class="bg-white p-8 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 border-4 border-purple-500 relative">
+        <span class="absolute top-0 right-0 bg-purple-500 text-white text-xs font-bold px-2 py-1 rounded-bl-lg">Bestseller</span>
         <h3 class="text-2xl font-semibold text-gray-900">Standard</h3>
         <p class="mt-4 text-gray-600 text-xl">$20/month</p>
         <ul class="mt-6 space-y-4">
@@ -83,14 +76,10 @@ export default function Home() {
             <span class="text-green-500">✔</span>
             <span class="ml-3 text-gray-700">Feature 4</span>
           </li>
-          <li class="flex items-center">
-            <span class="text-green-500">✔</span>
-            <span class="ml-3 text-gray-700">Feature 5</span>
-          </li>
         </ul>
-        <button class="mt-8 w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700">Choose Standard</button>
+        <button class="mt-8 w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-black-700">Choose Standard</button>
       </div>
-      
+       
       <div class="bg-white p-8 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
         <h3 class="text-2xl font-semibold text-gray-900">Premium</h3>
         <p class="mt-4 text-gray-600 text-xl">$30/month</p>
@@ -116,7 +105,65 @@ export default function Home() {
             <span class="ml-3 text-gray-700">Feature 5</span>
           </li>
         </ul>
-        <button class="mt-8 w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700">Choose Premium</button>
+        <button class="mt-8 w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-black-700">Choose Premium</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-gray-900 py-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-extrabold text-white">What Our Clients Say</h2>
+      <p class="mt-4 text-lg text-gray-400">Hear from our satisfied customers.</p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <div class="bg-gray-800 p-8 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
+        <p class="text-gray-300">"This service has been a game-changer for our business. Highly recommend!"</p>
+        <h3 class="mt-4 text-xl font-semibold text-white">John Doe</h3>
+        <p class="text-gray-500">CEO, Company A</p>
+      </div>
+      
+      <div class="bg-gray-800 p-8 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
+        <p class="text-gray-300">"Exceptional quality and fantastic customer support."</p>
+        <h3 class="mt-4 text-xl font-semibold text-white">Jane Smith</h3>
+        <p class="text-gray-500">CTO, Company B</p>
+      </div>
+      
+      <div class="bg-gray-800 p-8 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
+        <p class="text-gray-300">"I can't imagine working without this tool anymore. It's indispensable."</p>
+        <h3 class="mt-4 text-xl font-semibold text-white">Alice Johnson</h3>
+        <p class="text-gray-500">Manager, Company C</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-gray-900 py-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-extrabold text-gray-100">Top Blogs</h2>
+      <p class="mt-4 text-lg text-gray-400">Read our latest and greatest articles.</p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <div class="bg-white p-8 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:bg-gray-50">
+        <h3 class="text-2xl font-semibold text-gray-900">Blog Title 1</h3>
+        <p class="mt-4 text-gray-600">A brief description of blog 1.</p>
+        <a href="#" class="m-2 inline-block text-blue-600 hover:text-blue-800">Read more</a>
+      </div>
+      
+      <div class="bg-white p-8 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:bg-gray-50">
+        <h3 class="text-2xl font-semibold text-gray-900">Blog Title 2</h3>
+        <p class="mt-4 text-gray-600">A brief description of blog 2.</p>
+        <a href="#" class="m-2 inline-block text-blue-600 hover:text-blue-800">Read more</a>
+      </div>
+      
+      <div class="bg-white p-8 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:bg-gray-50">
+        <h3 class="text-2xl font-semibold text-gray-900">Blog Title 3</h3>
+        <p class="mt-4 text-gray-600">A brief description of blog 3.</p>
+        <a href="#" class="m-2 inline-block text-blue-600 hover:text-blue-800">Read more</a>
       </div>
     </div>
   </div>
