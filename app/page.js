@@ -149,19 +149,22 @@ export default function Home() {
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
       
       <div class="bg-white p-8 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:bg-gray-50">
-        <h3 class="text-2xl font-semibold text-gray-900">Blog Title 1</h3>
+        <h3 class="text-2xl font-semibold text-gray-900">Ethical Hacking and Penetration Testing</h3>
+        <img src="https://images.pexels.com/photos/1933900/pexels-photo-1933900.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Blog-3" className="w-full h-48 object-cover rounded-t-lg"/>
         <p class="mt-4 text-gray-600">A brief description of blog 1.</p>
         <a href="#" class="m-2 inline-block text-blue-600 hover:text-blue-800">Read more</a>
       </div>
       
       <div class="bg-white p-8 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:bg-gray-50">
-        <h3 class="text-2xl font-semibold text-gray-900">Blog Title 2</h3>
+        <h3 class="text-2xl font-semibold text-gray-900">AWS or Azure</h3>
+        <img src="https://images.pexels.com/photos/879109/pexels-photo-879109.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Blog-3" className="w-full h-48 object-cover rounded-t-lg"/>
         <p class="mt-4 text-gray-600">A brief description of blog 2.</p>
         <a href="#" class="m-2 inline-block text-blue-600 hover:text-blue-800">Read more</a>
       </div>
       
       <div class="bg-white p-8 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:bg-gray-50">
-        <h3 class="text-2xl font-semibold text-gray-900">Blog Title 3</h3>
+        <h3 class="text-2xl font-semibold text-gray-900">Quantum Computing</h3>
+        <img src="https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Blog-3" className="w-full h-48 object-cover rounded-t-lg"/>
         <p class="mt-4 text-gray-600">A brief description of blog 3.</p>
         <a href="#" class="m-2 inline-block text-blue-600 hover:text-blue-800">Read more</a>
       </div>
