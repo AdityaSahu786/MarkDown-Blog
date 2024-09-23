@@ -1,6 +1,6 @@
 ---
 title: Quantum Computers
-slug: Quantum Computers
+slug: Computers
 description: This is Quantum Computing Tutorial
 date: 31/03/2025
 author: Enrique

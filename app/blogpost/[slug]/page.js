@@ -12,7 +12,7 @@ export default function Page({ params }) {
 
     const filepath = `content/${params.slug}.md`
     const fileContent = fs.readFileSync(filepath, "utf-8")
-    const {blog, data} = matter(fileContent)
+    const {content, data} = matter(fileContent)
 
     return (
         <div className="max-w-5xl mx-auto p-4">
