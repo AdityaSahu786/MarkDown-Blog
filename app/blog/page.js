@@ -2,8 +2,17 @@ import { Button } from '@/components/ui/button';
 import React from 'react';
 import { buttonVariants } from '@/components/ui/button';
 import Link from 'next/link';
+import fs from "fs";
+import matter from "gray-matter"
 
-const blogs = [
+const dirContent = fs.readdirSync("content", "utf-8")
+const blogs = dirContent.map(file=>{
+    const fileContent = fs.readFileSync(`content/${file}`, "utf-8")
+    const {data} = matter(fileContent)
+    return data
+})
+
+/*const blogs = [
   {
     title: "First Blog",
     description: "This is the first blog description.",
@@ -30,7 +39,7 @@ const blogs = [
   },
   // Add more blog objects here
 ];
-
+*/
 const Blog = () => {
   return (
     <div className="container mx-auto p-4">
