@@ -7,6 +7,7 @@ import rehypeStringify from 'rehype-stringify'
 import remarkParse from 'remark-parse'
 import remarkRehype from 'remark-rehype'
 import { unified } from "unified";
+import rehypePrettyCode from "rehype-pretty-code";
 
 
 export default async function Page({ params }) {
@@ -33,6 +34,9 @@ export default async function Page({ params }) {
       .use(rehypeDocument, {title: '👋🌍'})
       .use(rehypeFormat)
       .use(rehypeStringify)
+      .use(rehypePrettyCode, {
+        theme: "github-dark",
+      })
 
       const htmlContent = (await processor.process(content)).toString()
       
@@ -47,7 +51,7 @@ export default async function Page({ params }) {
             <p className="text-gray-500 mb-4">{data.date}</p>
             </div>
             
-            <div dangerouslySetInnerHTML={{ __html: htmlContent }} className="prose"></div>
+            <div dangerouslySetInnerHTML={{ __html: htmlContent }} className="prose dark:prose-invert"></div>
         </div>
     )
 }
