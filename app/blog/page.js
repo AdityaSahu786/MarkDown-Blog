@@ -46,12 +46,12 @@ const Blog = () => {
       <h1 className="text-4xl font-bold text-center mb-8">Blog</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {blogs.map((blog, index) => (
-          <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
+          <div key={index} className="rounded-lg shadow-md overflow-hidden">
             <img src={blog.image} alt={blog.title} className="w-full h-64 object-cover" />
             <div className="p-4">
               <h2 className="text-2xl font-bold mb-2">{blog.title}</h2>
-              <p className="text-gray-600 mb-4">{blog.description}</p>
-              <div className="mt-4 text-gray-500 text-sm">
+              <p className="mb-4">{blog.description}</p>
+              <div className="mt-4 text-sm">
                 <span>{blog.date}</span> | <span>{blog.author}</span>
               </div>
 

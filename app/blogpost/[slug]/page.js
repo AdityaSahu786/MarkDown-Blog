@@ -11,8 +11,15 @@ export default function Page({ params }) {
     };*/
 
     const filepath = `content/${params.slug}.md`
-    const fileContent = fs.readFileSync(filepath, "utf-8")
-    const {content, data} = matter(fileContent)
+    if(!fs.existsSync(filepath)){
+        notFound()
+        return
+    }
+    
+        const fileContent = fs.readFileSync(filepath, "utf-8")
+        const {content, data} = matter(fileContent) 
+    
+   
 
     return (
         <div className="max-w-5xl mx-auto p-4">
