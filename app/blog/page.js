@@ -5,6 +5,7 @@ import Link from 'next/link';
 import fs from "fs";
 import matter from "gray-matter"
 
+
 const dirContent = fs.readdirSync("content", "utf-8")
 const blogs = dirContent.map(file=>{
     const fileContent = fs.readFileSync(`content/${file}`, "utf-8")
